@@ -15,7 +15,7 @@ elif time == 'UTC':
 # Greeting logic
 if hour >= 0 and hour < 5:
     greeting = "Good Night!"
-if hour > 5 and hour < 12:
+elif hour > 5 and hour < 12:
     greeting = "Good Morning!"
 elif 12 <= hour < 18:
     greeting = "Good Afternoon!"
