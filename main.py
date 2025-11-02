@@ -1,14 +1,14 @@
 from datetime import datetime
 import pytz
 
-time='europe'
+time='UTC'
 
 if time == 'europe':
     hour =datetime.now(pytz.timezone('Europe/London')).hour
 elif time == 'india':
     hour = datetime.now(pytz.timezone('Asia/Kolkata')).hour
 elif time == 'USA':
-    hour = datetime.now(pytz.timezone('USA')).hour
+    hour = datetime.now(pytz.timezone('America/New_York')).hour
 elif time == 'UTC':
     hour = datetime.now(pytz.timezone('UTC')).hour
 
